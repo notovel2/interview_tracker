@@ -1,7 +1,7 @@
 import { DataTypes, Model } from "sequelize";
 import db from "../../../infrastructure/db/postgres";
 import { CreateChangelogInput } from "../../types/repository/changelog.repository";
-import { ChangelogModel } from "../../../model/Changelog";
+import { ChangelogModel } from "../../../model/changelog";
 
 const Changelog = db.define<Model<ChangelogModel, CreateChangelogInput>>('changelogs', {
     id: {

@@ -1,7 +1,7 @@
 import { DataTypes, Model } from "sequelize";
 import db from "../../../infrastructure/db/postgres";
 import { CreateCommentInput } from "../../types/repository/comment.repository";
-import { CommentModel } from "../../../model/Comment";
+import { CommentModel } from "../../../model/comment";
 
 const Comment = db.define<Model<CommentModel, CreateCommentInput>>('comments', {
     id: {

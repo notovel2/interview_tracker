@@ -8,11 +8,9 @@
     "start": "node ./dist/index.js",
     "dev": "yarn db && yarn build && node dist/index.js",
     "docker:dev": "nodemon",
-    "db": "yarn db:migrate && yarn db:seed",
+    "db": "yarn db:migrate",
     "db:migrate:generate": "sequelize-cli model:generate",
-    "db:migrate": "sequelize-cli db:migrate",
-    "db:seed:generate": "sequelize-cli seed:generate",
-    "db:seed": "sequelize-cli db:seed:all"
+    "db:migrate": "sequelize-cli db:migrate"
   },
   "author": "",
   "license": "ISC",
